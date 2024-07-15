@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const lastWaypoint = flightPlan && flightPlan.waypoints[flightPlan.waypoints.length - 1] ? flightPlan.waypoints[flightPlan.waypoints.length - 1] : 'N/A';
 
             const listItem = document.createElement('li');
-            const localImageUrl = `${user.username}.jpeg`;
+            const localImageUrl = `PFP/${user.username}.jpeg`;
             listItem.innerHTML = `
                 <img src="${localImageUrl}" alt="${user.username}'s profile picture" class="profile-pic">
                 <span class="username">${user.username}</span>
