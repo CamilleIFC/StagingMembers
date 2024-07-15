@@ -1,0 +1,118 @@
+:root {
+    --bg-color: #282c34;
+    --text-color: #ffffff;
+    --primary-color: #4CAF50;
+    --primary-color-hover: #45a049;
+    --secondary-color: rgba(255, 255, 255, 0.1);
+    --border-color: rgba(255, 255, 255, 0.2);
+    --button-text-color: #282c34;
+    --gradient-start: #2a2a72;
+    --gradient-end: #009ffd;
+    --button-gradient-start: #12d9f3;
+    --button-gradient-end: #12d9f3;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    text-align: center;
+    padding: 40px;
+    width: 80%;
+    max-width: 800px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+h1 {
+    margin: 0 0 20px;
+    font-size: 2em;
+}
+
+button {
+    background: linear-gradient(135deg, var(--button-gradient-start), var(--button-gradient-end));
+    color: var(--button-text-color);
+    padding: 15px 30px;
+    font-size: 1.1em;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+    border-width: 0px;
+    border-color:aqua;
+}
+
+button:hover {
+    background: linear-gradient(135deg, var(--button-gradient-start), var(--button-gradient-end));
+}
+
+p {
+    margin: 20px 0;
+    font-size: 1.2em;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    background-color: var(--secondary-color);
+    border: 1px solid var(--border-color);
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+li span {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.callsign {
+    background-color: var(--primary-color);
+    color: var(--button-text-color);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.waypoints {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.waypoint {
+    margin: 0 5px;
+}
+
+.arrow {
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.first-waypoint {
+    margin-left: 10em; /* 10 em units to add space before the first waypoint */
+}
